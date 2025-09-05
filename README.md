@@ -1,42 +1,12 @@
-# 🛋 Comforty – Modern Furniture E-Commerce Frontend
+# React + Vite
 
-Comforty is a **React + Firebase powered e-commerce frontend** for browsing, adding to cart, and purchasing furniture online.  
-It includes **user authentication, cart management, Google Maps integration, and a responsive design**.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## ✨ Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- 🔐 User Authentication (Login/Signup with Firebase)  
-- 🛒 Add to Cart & Cart Management (Context API)  
-- 🎨 Modern Responsive UI with **Tailwind CSS & ShadCN components**  
-- 📍 Contact Page with **Google Maps (Lahore location)**  
-- 📱 Mobile-friendly Design  
+## Expanding the ESLint configuration
 
----
-
-## 🛠 Tech Stack
-
-**Frontend:**  
-- React.js (Vite)  
-- Tailwind CSS, ShadCN UI  
-- React Hook Form (form validation)  
-- React Router DOM  
-
-**Authentication & Hosting:**  
-- Firebase Authentication  
-- Firebase Hosting  
-
-**Other Tools:**  
-- Context API (Cart & Auth State)  
-- React Icons  
-- GitHub for Version Control  
-
----
-
-## 🚀 Getting Started
-
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/your-username/comforty.git
-   cd comforty
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
