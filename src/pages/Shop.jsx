@@ -1,4 +1,4 @@
-// src/pages/Shop.jsx
+
 import { useState } from "react";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products";
@@ -50,3 +50,4 @@ export default function Shop() {
     </div>
   );
 }
+
