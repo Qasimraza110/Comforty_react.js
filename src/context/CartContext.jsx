@@ -7,12 +7,12 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [userId, setUserId] = useState(null);
 
-  // 🟢 Firebase Auth state track
+  //  Firebase Auth state track
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
         setUserId(user.uid);
-        // 🟢 Load cart from localStorage for this user
+        
         const savedCart = localStorage.getItem(`cart_${user.uid}`);
         if (savedCart) {
           setCartItems(JSON.parse(savedCart));
@@ -25,17 +25,17 @@ export const CartProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
-  // 🟢 Save cart to localStorage whenever it changes
+  //  Save cart to localStorage whenever it changes
   useEffect(() => {
     if (userId) {
       localStorage.setItem(`cart_${userId}`, JSON.stringify(cartItems));
     }
   }, [cartItems, userId]);
 
-  // 🟢 Add to Cart
+  //  Add to Cart
   const addToCart = (product, navigate) => {
     if (!userId) {
-      navigate("/login"); // 🔴 Agar user login nahi hai → login page
+      navigate("/login"); 
       return;
     }
 
@@ -50,12 +50,12 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  // 🟢 Remove item
+  // Remove item
   const removeFromCart = (id) => {
     setCartItems((prev) => prev.filter((item) => item.id !== id));
   };
 
-  // 🟢 Increase qty
+  //  Increase qty
   const increaseQty = (id) => {
     setCartItems((prev) =>
       prev.map((item) =>
@@ -64,7 +64,7 @@ export const CartProvider = ({ children }) => {
     );
   };
 
-  // 🟢 Decrease qty
+  //  Decrease qty
   const decreaseQty = (id) => {
     setCartItems((prev) =>
       prev.map((item) =>
@@ -75,7 +75,7 @@ export const CartProvider = ({ children }) => {
     );
   };
 
-  // 🟢 Clear cart (checkout ke baad use hoga)
+  //  Clear cart (checkout ke baad use hoga)
   const clearCart = () => {
     setCartItems([]);
     if (userId) {
@@ -103,3 +103,4 @@ export const CartProvider = ({ children }) => {
 };
 
 export const useCart = () => useContext(CartContext);
+
