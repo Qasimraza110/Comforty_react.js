@@ -8,7 +8,7 @@ export default function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false); // ✅ Loading state
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleSignup = async (e) => {
@@ -75,3 +75,4 @@ export default function Signup() {
     </div>
   );
 }
+
