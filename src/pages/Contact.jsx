@@ -14,7 +14,7 @@ export default function Contact() {
   const onSubmit = (data) => {
     setSuccess(`✅ Thank you, ${data.name}! We received your message.`);
     reset();
-    setTimeout(() => setSuccess(""), 4000); // 4s baad message gayab
+    setTimeout(() => setSuccess(""), 3000); 
   };
 
   return (
@@ -32,11 +32,11 @@ export default function Contact() {
           <div className="space-y-5">
             <div className="flex items-center space-x-4">
               <FaPhoneAlt className="text-teal-600 text-xl" />
-              <span className="text-gray-700">+92 300 1234567</span>
+              <span className="text-gray-700">+92 326 5307342</span>
             </div>
             <div className="flex items-center space-x-4">
               <FaEnvelope className="text-teal-600 text-xl" />
-              <span className="text-gray-700">support@comforty.com</span>
+              <span className="text-gray-700">info@comforty.com</span>
             </div>
             <div className="flex items-center space-x-4">
               <FaMapMarkerAlt className="text-teal-600 text-xl" />
@@ -104,3 +104,4 @@ export default function Contact() {
     </div>
   );
 }
+
