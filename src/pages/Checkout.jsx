@@ -1,4 +1,4 @@
-// src/pages/Checkout.jsx
+
 import { useCart } from "../context/CartContext";
 import { loadStripe } from "@stripe/stripe-js";
 import {
@@ -88,3 +88,4 @@ export default function Checkout() {
     </Elements>
   );
 }
+
