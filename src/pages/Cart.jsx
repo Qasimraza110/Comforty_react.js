@@ -1,4 +1,4 @@
-// src/pages/Cart.jsx
+
 import { useCart } from "../context/CartContext";
 import { FaPlusCircle, FaMinusCircle, FaTrashAlt } from "react-icons/fa";
 
@@ -79,3 +79,4 @@ export default function Cart() {
     </div>
   );
 }
+
