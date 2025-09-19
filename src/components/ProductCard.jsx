@@ -9,9 +9,8 @@ export default function ProductCard({ product }) {
 
   const handleAdd = () => {
     setAdding(true);
-    addToCart(product, navigate); // ✅ navigate pass kiya
+    addToCart(product, navigate); 
 
-    // Show “Added” for 1.2s, then revert
     setTimeout(() => {
       setAdding(false);
     }, 1200);
@@ -37,3 +36,4 @@ export default function ProductCard({ product }) {
     </div>
   );
 }
+
