@@ -4,7 +4,7 @@ import products from "../data/products";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-  // Show only 4 featured products
+
   const featuredProducts = products.slice(0, 4);
 
   return (
@@ -63,3 +63,4 @@ export default function Home() {
     </div>
   );
 }
+
