@@ -7,7 +7,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false); // ✅ Loading state
+  const [loading, setLoading] = useState(false); 
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -20,7 +20,7 @@ export default function Login() {
     } catch (err) {
       setError(err.message);
     } finally {
-      setLoading(false); // ✅ Stop loading
+      setLoading(false); 
     }
   };
 
@@ -65,3 +65,4 @@ export default function Login() {
     </div>
   );
 }
+
