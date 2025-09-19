@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+
 import { Link } from "react-router-dom";
 import { useContext, useState, useEffect } from "react";
 import { AuthContext } from "../context/AuthContext";
@@ -215,3 +215,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
