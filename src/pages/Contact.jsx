@@ -14,7 +14,7 @@ export default function Contact() {
   const onSubmit = (data) => {
     setSuccess(`✅ Thank you, ${data.name}! We received your message.`);
     reset();
-    setTimeout(() => setSuccess(""), 4000); // 4s baad message gayab
+    setTimeout(() => setSuccess(""), 4000); 
   };
 
   return (
@@ -104,3 +104,4 @@ export default function Contact() {
     </div>
   );
 }
+
