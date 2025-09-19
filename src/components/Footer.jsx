@@ -1,4 +1,4 @@
-// src/components/Footer.jsx
+
 import React from "react";
 import {
   FaFacebookF,
@@ -88,3 +88,4 @@ export default function Footer() {
     </footer>
   );
 }
+
