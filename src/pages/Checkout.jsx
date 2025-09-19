@@ -1,4 +1,4 @@
-// src/pages/Checkout.jsx
+
 import { useCart } from "../context/CartContext";
 import { loadStripe } from "@stripe/stripe-js";
 import {
@@ -10,7 +10,7 @@ import {
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const stripePromise = loadStripe("pk_test_12345_your_publishable_key"); // apna key dalna
+const stripePromise = loadStripe("pk_test_12345_your_publishable_key"); 
 
 function CheckoutForm() {
   const { cartItems, total, clearCart } = useCart();
@@ -26,13 +26,13 @@ function CheckoutForm() {
 
     setLoading(true);
 
-    // ⚡ Demo only: Normally backend pe PaymentIntent hota
+    
     setTimeout(() => {
       setLoading(false);
       setSuccess(true);
       clearCart();
 
-      // 2s delay ke baad home pe navigate
+   
       setTimeout(() => {
         navigate("/");
       }, 2000);
@@ -88,3 +88,4 @@ export default function Checkout() {
     </Elements>
   );
 }
+
