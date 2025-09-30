@@ -83,7 +83,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="bg-gray-900 text-gray-400 text-center py-4 text-sm">
-        &copy; {new Date().getFullYear()} Comforty. All rights reserved.
+        &copy; {new Date().getFullYear()} Comforty. All rights reserved.Qasim Raza 
       </div>
     </footer>
   );
